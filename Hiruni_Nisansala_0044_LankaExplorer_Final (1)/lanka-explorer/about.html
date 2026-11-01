@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover Sri Lankan destinations with Lanka Explorer, an individual student project.">
+  <title>Lanka Explorer | About</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&amp;family=Poppins:wght@600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header>
+    <a href="index.html" class="logo">Lanka Explorer</a>
+    <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="main-navigation">&#9776;</button>
+    <nav id="main-navigation" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="trip.html">My Trip</a></li>
+        <li><a href="about.html" class="active" aria-current="page">About</a></li>
+        <li><button class="theme-toggle" type="button" aria-pressed="false">Dark mode</button></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main-content">
+    <p id="storage-notice" role="status" hidden></p>
+    <section>
+      <h1>About This Project</h1>
+      <p>Lanka Explorer is an individual student project that helps travellers discover Sri Lankan destinations. I am developing it to practise semantic HTML, structured data and accessible forms. The final version combines destination search, live weather, rupee conversions, interactive maps and a saved trip planner, with light and dark themes.</p>
+    </section>
+    <section id="team">
+      <h2>Individual Developer</h2>
+      <article><h3>Hiruni Nisansala</h3><p>Student ID: 0044</p><p>Responsible for project planning, destination content, JSON data, page structure and testing.</p></article>
+    </section>
+    <section id="enquiry">
+      <h2>Plan Your Trip With Me</h2>
+      <p>This is a demonstration form. JavaScript validates the fields locally; no enquiry is sent or stored. Use sample data only.</p>
+      <noscript><p>This demonstration form requires JavaScript. No submissions can be sent.</p></noscript>
+      <form id="enquiry-form" novalidate>
+        <p><label for="name">Full name</label><input type="text" id="name" name="name" autocomplete="name" required></p>
+        <p><label for="email">Email</label><input type="email" id="email" name="email" autocomplete="email" required></p>
+        <p><label for="date">Travel date</label><input type="date" id="date" name="date"></p>
+        <p><label for="people">Number of travellers</label><input type="number" id="people" name="people" min="1" max="20"></p>
+        <fieldset><legend>Interests</legend>
+          <label><input type="checkbox" name="interest" value="Heritage"> Heritage</label>
+          <label><input type="checkbox" name="interest" value="Beach"> Beach</label>
+          <label><input type="checkbox" name="interest" value="Nature"> Nature</label>
+          <label><input type="checkbox" name="interest" value="Wildlife"> Wildlife</label>
+        </fieldset>
+        <p><label for="message">Message</label><textarea id="message" name="message" rows="4"></textarea></p>
+        <div id="form-message" role="alert" tabindex="-1"></div>
+        <button type="submit">Send Enquiry</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2026 Lanka Explorer — Hiruni Nisansala. Individual student project.</p>
+    </footer>
+  <script src="js/app.js"></script>
+</body>
+</html>
